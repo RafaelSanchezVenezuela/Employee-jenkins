@@ -14,6 +14,11 @@ public class EmployeeServiceImpl implements EmployeeService{
     private EmployeeRepository _employeeRepository = new EmployeeRepository();
     private Employees employees = new Employees();
 
+    public EmployeeServiceImpl(){
+        Employee employeeInitial = new Employee("1","Rafael","Sanchez","m@mail.com","LocalList");
+        List<Employee> list = new ArrayList<>();
+        employees.setEmployees(list);
+    }
     //private Employees employees = new Employees();
     //public Employee employeeInitial = new Employee("7","Mat","San","m@mail.com","Son");
     //public List<Employee> list = new ArrayList<>();
