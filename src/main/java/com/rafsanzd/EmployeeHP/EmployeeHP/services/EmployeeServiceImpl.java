@@ -12,6 +12,7 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
     private EmployeeRepository _employeeRepository = new EmployeeRepository();
+    private Employees employees = new Employees();
 
     //private Employees employees = new Employees();
     //public Employee employeeInitial = new Employee("7","Mat","San","m@mail.com","Son");
