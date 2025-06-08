@@ -33,8 +33,8 @@ class EmployeeHpApplicationTests {
 	private EmployeeController controller;
 
 	public Employees employees = new Employees();
-	public Employee employeeSaved = new Employee("3","Mai","Rod","r@mmail.com","Mam");
 	public Employee employeeNew = new Employee("3","Mai","Rod","r@mmail.com","Mam");
+	public Employee employeeSaved = employeeNew;
 
 	public EmployeeHpApplicationTests() {
 		Employee employee1 = new Employee("1","Mat","San","m@mail.com","Son");
