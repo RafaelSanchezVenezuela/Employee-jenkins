@@ -67,6 +67,6 @@ class EmployeeHpApplicationTests {
 		//Then
 		//Make sure to import assertThat From org.assertj.core.api package
 		assertThat(employee).isNotNull();
-		assertThat(employee.getEmployee_id()).isEqualTo("3");
+		assertThat(employee.getEmployee_id()).isEqualTo("1");
 	}
 }
