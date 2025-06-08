@@ -5,11 +5,7 @@ pipeline {
 
             stage ('test') {
                 steps {
-                  dir("build_java"){
-                        echo "mvn clean compile test"
-                  }
-
-
+                  echo "mvn clean compile test"
                 }
             }
 
