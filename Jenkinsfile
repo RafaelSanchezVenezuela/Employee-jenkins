@@ -13,7 +13,6 @@ pipeline {
                   sh "mvn -f pom.xml clean install -Dmaven.test.skip=true"
                 }
             }
-
             stage ('Create docker image') {
                 steps {
                   echo "creando docker"
