@@ -17,7 +17,7 @@ pipeline {
                 steps {
                   echo "creando docker"
                   sh "docker build -t springboot-docker ."
-                  sh "docker run -d -p 8085:8085 -v /var/lib/docker/volumes/volumen-employee/_data:/app/data/datos springboot-docker"
+                  sh "docker run -d -p 8085:8085 -v /var/lib/docker/volumes/volumen-employee/_data:/app/data --name springboot-Employee_container springboot-docker"
                 }
 
             }
