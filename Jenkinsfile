@@ -26,7 +26,8 @@ pipeline {
                   echo "subir imagen a docker hub"
                   docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                               app.push("${env.BUILD_NUMBER}")
-                }
+                  }
+               }
             }
             stage ('deployment') {
                 steps {
